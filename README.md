@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -44,4 +43,3 @@ Implementing Next Js app for portfolio with the most important technology is Typ
 . Tailwind Css
 . Type Script
 . Motion Framer (third party library)
->>>>>>> origin/main
