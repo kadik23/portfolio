@@ -1,5 +1,6 @@
+"use client"
 import ServiceCard from "@/Components/ServiceCard";
-import { Icon } from '@iconify/react/dist/iconify.js'
+import { motion } from "framer-motion";
 
 export default function servicespage(){
     const services = [
@@ -10,15 +11,19 @@ export default function servicespage(){
 
     return (
         <>
-        <div className="flex flex-col gap-4 mt-24 ml-4 mx-4">
+        <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5,}}
+            className="flex flex-col gap-4 mt-24 ml-4 mx-4">
             <div className="inika-bold text-xl xl:text-2xl flex gap-2">
                 My <div className="text-green">services</div>
             </div>
             <div className="inika-bold text-3xl xl:text-5xl ">What I Do</div>
-        </div>
+        </motion.div>
         <div className="flex flex-wrap gap-4 mt-16 justify-center mx-4">
             {services.map((service, index) => (
-                <ServiceCard key={index} service={service.service} icon={service.icon} detail={service.detail} />
+                <ServiceCard key={index} delay={(index+1)/2} service={service.service} icon={service.icon} detail={service.detail} />
             ))}
         </div>
     </>
