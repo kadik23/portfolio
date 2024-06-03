@@ -1,1 +1,1 @@
-export const links: string[] = ['home', 'services', 'resume', 'projects', 'contact']
+export const links: {name:string,path:string}[] = [{name:'home',path:''}, {name:'services',path:'services'}, {name:'resume',path:'resume'}, {name:'projects',path:'projects'}, {name:'contact',path:'contact'}]

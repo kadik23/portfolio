@@ -19,7 +19,7 @@ function Header() {
 
     return (
         <motion.div
-            className="w-full flex justify-between items-center p-4 fixed top-0 left-0"
+            className="w-full flex justify-between items-center p-4 fixed top-0 left-0  z-10"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -63,10 +63,10 @@ function Header() {
                         </Link>
                         <div className='inika-bold text-lg flex flex-col items-center'>
                             {links.map(link => {
-                                const isActive = pathname.startsWith(`/${link}`)
+                                const isActive = pathname.startsWith(`/${link.path}`)
                                 return (
-                                    <Link key={link} href={`/${link}`} className={`capitalize hover:text-green transition-colors duration-100 py-1 px-2 m-1 ${isActive ? 'text-green' : 'text-white'}`}>
-                                        {isActive ? '<' : ''} {link} {isActive ? '>' : ''}
+                                    <Link key={link.name} onClick={()=>setMenuOpen(prev => !prev )} href={`/${link.path}`} className={`capitalize hover:text-green transition-colors duration-100 py-1 px-2 m-1 ${isActive ? 'text-green' : 'text-white'}`}>
+                                        {isActive ? '<' : ''} {link.name} {isActive ? '>' : ''}
                                     </Link>
                                 )
                             })}

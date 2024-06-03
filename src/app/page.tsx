@@ -1,113 +1,91 @@
+"use client"
+import { Icon } from "@iconify/react/dist/iconify.js";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
+  const animationVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0 }
+  };
+
+  const [experience, setExperience] = useState(0);
+  const [projects, setProjects] = useState(0);
+  const [languages, setLanguages] = useState(0);
+
+  useEffect(() => {
+    const animateValue = (setValue:any, targetValue:any) => {
+      let start = 0;
+      const duration = 2000; // 2 seconds
+      const stepTime = Math.abs(Math.floor(duration / targetValue));
+
+      const timer = setInterval(() => {
+        start += 1;
+        setValue(start);
+        if (start === targetValue) {
+          clearInterval(timer);
+        }
+      }, stepTime);
+    };
+
+    animateValue(setExperience, 2);
+    animateValue(setProjects, 10);
+    animateValue(setLanguages, 5);
+  }, []);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="flex relative ">
+      <motion.div
+        className="w-full flex flex-col items-start mt-4 ml-8"
+        initial="hidden"
+        animate="visible"
+        variants={animationVariants}
+        transition={{ duration: 1 }}
+      >
+        <div className="pt-16 px-4 pb-8">
+          <div className="flex flex-col inika-regular opacity-30 text-xs xl:text-sm">
+            <div className="">{"</html>"}</div>
+            <div className="px-4">{"<body>"}</div>
+            <div className="px-6">{"<h1>"}</div>
+          </div>
+          <div className="inika-bold text-2xl lg:text-4xl sm:text-xl px-6">Hello <br /> 
+            <div className="text-nowrap flex gap-2">
+              I’m <div className="text-green"> Salah</div> , <br />
+            </div>
+            <div className="flex items-end ">
+              CS Student <div className="inika-regular opacity-30 text-xs xl:text-sm ml-2 ">{'</h1>'}</div>
+            </div>
+          </div>
+          <div className="px-6">
+            <div className="opacity-30 text-xs xl:text-sm">{"<p>"}</div>
+            <div className="inika-regular opacity-70  xl:text-2xl text-lg">full stack developer</div>
+            <div className="opacity-30 text-xs xl:text-sm">{"</p>"}</div>
+          </div>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <div className="inika-regular flex lg:flex-row flex-col items-center px-8">
+          <button className="text-green border-2 lg:mr-4 mb-4 border-green rounded-md lg:px-3 lg:py-1 lg:text-xl px-2 py-0.5 text-lg w-44 hover:bg-green hover:text-dark-gray transition-all duration-300 active:scale-105 flex items-center"><Icon icon="hugeicons:file-view" width="20" height="20" className="mr-2"/> View my CV</button>
+          <Link href="/contact" className="text-dark-gray text-center bg-green rounded-md mb-4 lg:px-3 lg:py-1.5 lg:text-xl px-2 py-1 text-lg w-44 flex items-center justify-center transition-all duration-300 active:scale-105 hover:opacity-75"><Icon icon="fluent-mdl2:contact" width="18" height="18" className="mr-2"/>Hire me</Link>
+        </div>
+        <div className="flex items-center justify-start w-full">
+          <div className="p-4 flex flex-wrap gap-8 justify-between px-8 bg-black/25 rounded-xl mt-8 ml-6 w-3/6">
+            <div className="flex items-center w-32">
+              <div className="text-4xl inika-bold">{experience < 10 ? `0${experience}` : experience}</div>
+              <div className="text-xs inika-regular ml-2">Years of experience</div>
+            </div>
+            <div className="flex items-center w-32">
+              <div className="text-4xl inika-bold">{projects < 10 ? `0${projects}` : projects}</div>
+              <div className="text-xs inika-regular ml-2">Projects completed</div>
+            </div>
+            <div className="flex items-center w-32">
+              <div className="text-4xl inika-bold">{languages < 10 ? `0${languages}` : languages}</div>
+              <div className="text-xs inika-regular ml-2">Programming Languages</div>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+      <Image src='/profile.png' priority quality={100} height={500} width={300} alt="Description of image" className="absolute top-8 right-0 h-screen w-[43%] lg:block hidden -z-10"/>
+    </div>
   );
 }

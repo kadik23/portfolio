@@ -21,9 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="lg:h-screen w-auto lg:overflow-hidden">
         <Header/> 
-        <div className="mt-16 mx-4">
+        <div >
           {children}
         </div>
       </body>

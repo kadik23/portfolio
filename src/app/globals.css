@@ -26,3 +26,19 @@ body {
   font-weight: 700;
   font-style: normal;
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+@apply bg-light-gray
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-green rounded-lg;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-green/45
+}
