@@ -53,7 +53,7 @@ function Header() {
                         animate={{ x: 0 }}
                         exit={{ x: '100%' }}
                         transition={{ duration: 0.3 }}
-                        className="fixed inset-0 bg-gray-800 bg-opacity-90 flex flex-col items-center justify-center text-white z-50"
+                        className="fixed inset-0 bg-gray-800 h-screen w-screen bg-opacity-90 flex flex-col items-center justify-center text-white z-50"
                     >
                         <div className="lg:hidden absolute top-3 right-4 w-8 h-8 hover:bg-light-gray rounded-full cursor-pointer" onClick={toggleMenu}>
                             <Icon icon={menuOpen ? "jam:close" : "jam:menu"} width="32" height="32" className="hover:text-green" />
