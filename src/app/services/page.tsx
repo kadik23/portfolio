@@ -16,10 +16,10 @@ export default function servicespage(){
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5,}}
             className="flex flex-col gap-4 mt-24 ml-4 mx-4">
-            <div className="inika-bold text-xl xl:text-2xl flex gap-2">
+            <div className="inika-bold text-lg xl:text-xl flex gap-2">
                 My <div className="text-green">services</div>
             </div>
-            <div className="inika-bold text-3xl xl:text-5xl ">What I Do</div>
+            <div className="inika-bold text-2xl xl:text-4xl ">What I Do</div>
         </motion.div>
         <div className="flex flex-wrap gap-4 mt-16 justify-center mx-4">
             {services.map((service, index) => (

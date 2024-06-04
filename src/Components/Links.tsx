@@ -12,7 +12,7 @@ function Links() {
             {links.map(link => {
                 const isActive = pathname.startsWith(`/${link.path}`)
                 return (
-                    <Link key={link.name} href={`/${link.path}`} className={`capitalize hover:text-green transition-colors duration-100 py-1 px-2 m-1 ${isActive ? 'text-green' : 'text-white'}`}>
+                    <Link key={link.name} href={`/${link.path}`} className={`capitalize  hover:text-green transition-colors duration-100 py-1 px-2 m-1 ${isActive ? 'text-green' : 'text-white'}`}>
                         {isActive ? '<' : ''} {link.name} {isActive ? '>' : ''}
                     </Link>
                 )
