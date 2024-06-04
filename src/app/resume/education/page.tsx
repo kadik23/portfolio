@@ -29,8 +29,8 @@ export default function educationpage() {
             <div className="text-center xl:text-start">I am computer science student in university, Graduated Bachelor{"'"}s degree and i’m passionate about programming 3 years. I’m currently a Web Developer</div>
         </div>
         <div className="flex flex-wrap justify-center xl:justify-start gap-4 w-full">
-            {experiecntData.map(experience =>{
-                return (<InformationsCard  duration = {experience.duration} title={experience.title} content={experience.content}/>)
+            {experiecntData.map((experience, index) =>{
+                return (<InformationsCard key={index}  duration = {experience.duration} title={experience.title} content={experience.content}/>)
             })}
         </div>
     </div>
