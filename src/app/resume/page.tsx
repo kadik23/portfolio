@@ -37,8 +37,8 @@ export default function experiencepage(){
             <div className="text-center xl:text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget dolor vel est <br /> iaculis finibus</div>
         </div>
         <div className="flex flex-wrap justify-center xl:justify-start gap-4 w-full">
-            {experiecntData.map(experience =>{
-                return (<InformationsCard  duration = {experience.duration} title={experience.title} content={experience.content}/>)
+            {experiecntData.map((experience, index) =>{
+                return (<InformationsCard key={index}  duration = {experience.duration} title={experience.title} content={experience.content}/>)
             })}
         </div>
     </div>
