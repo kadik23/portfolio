@@ -30,7 +30,7 @@ function SkillsBranch({ index, skills, field, order }: { index: number, skills: 
                     >
                         {field}
                 </div> 
-                <hr className={`border-2 border-green w-40 order-1 lg:order-${order === 1 ? '2' : '1'}`} />
+                <hr className={`border-2 border-green w-32 lg:w-40 order-1 lg:order-${order === 1 ? '2' : '1'}`} />
             </div>
             <div className={`flex ${order === 2 ? 'flex-row-reverse justify-start' : ' justify-end'}  gap-2 px-4 w-full`}>
                 {skills.map((skill, index) => (
