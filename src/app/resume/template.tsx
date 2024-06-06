@@ -17,7 +17,7 @@ const links = [
 
     {
         name: 'experience',
-        path: ''
+        path: '/experience'
     },
     {
         name: 'education',
@@ -42,33 +42,33 @@ export default function RootLayout({
     const pathname = usePathname()
 
     return (
-        <div className="flex flex-col justify-between items-center w-full xl:flex-row ">
-            <div className="flex flex-col xl:w-[35%] mt-16 xl:ml-16">
+        <div className="flex flex-col justify-between items-center w-full lg:flex-row ">
+            <div className="flex flex-col lg:w-[35%] mt-16 lg:ml-16">
                 <motion.div
                     initial={{ opacity: 0, x: -100 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, }}
-                    className="flex flex-col gap-4 mt-16 xl:ml-4 mx-4"
+                    className="flex flex-col gap-4 mt-16 lg:ml-4 mx-4"
                 >
-                    <div className="inika-bold text-lg xl:text-xl flex gap-2">
+                    <div className="inika-bold text-lg lg:text-xl flex gap-2">
                         My <div className="text-green">resume</div>
                     </div>
                     <div className="w-[20rem]">
-                        <div className="inika-bold text-2xl xl:text-5xl text-nowrap">Why hire me?</div>
+                        <div className="inika-bold text-2xl lg:text-5xl text-nowrap">Why hire me?</div>
                         <div className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
                     </div>
                 </motion.div>
                 <div className="w-[20rem] mx-4 mt-4 mb-8 flex flex-col gap-2">
                     {links.map((link,index) => {
-                        const isActive = pathname === `/resume${link.path}`;
+                        const isActive = pathname.startsWith(`/resume${link.path}`);
                         const delay = 0.5
                         return (
-                            <Link href={`/resume/${link.path.slice(1)}`} key={link.name}>
+                            <Link href={`/resume/${link.path.slice(1)}`} key={link.name} className=" hover:opacity-80 transition-all duration-200">
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.5, delay: (0.25 + index)/2 }}
-                                    className={` ${isActive == true ? 'bg-green text-dark-gray' : 'bg-light-gray'} w-full py-2 inika-regular  rounded-md text-center hover:opacity-80 capitalize`}
+                                    className={` ${isActive == true ? 'bg-green text-dark-gray' : 'bg-light-gray'} w-full py-2 inika-regular  rounded-md text-center  capitalize`}
                             >
                                 {link.name}
                             </motion.div>

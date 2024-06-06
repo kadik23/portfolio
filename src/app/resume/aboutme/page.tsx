@@ -13,7 +13,7 @@ export default function aboutMepage(){
         <div className=" mt-8 inika-bold text-2xl text-center">
             About me
         </div>
-        <div className="flex flex-wrap justify-center xl:justify-start gap-4 w-full">
+        <div className="flex flex-wrap inika-regular justify-center xl:justify-start gap-4 w-full">
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
