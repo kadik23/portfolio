@@ -61,4 +61,4 @@ function Skillspage() {
   );
 }
 
-export default skillspage;
+export default Skillspage;
