@@ -9,7 +9,7 @@ import { usePathname } from "next/navigation"
 //     title: "skills"
 // };
 
-export default function template({
+export default function Template({
     children,
 }: Readonly<{
     children: React.ReactNode;

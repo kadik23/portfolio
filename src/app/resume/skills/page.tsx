@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import SkillsBranch from '@/Components/SkillsBranch';
 import { hardSkills } from '@/app/consts';
 
-function skillspage() {
+function Skillspage() {
   const generateSkillsComponents = (skillsObj: HardSkills) => {
     const components = [];
     let index = 1;
