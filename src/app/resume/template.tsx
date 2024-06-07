@@ -42,7 +42,7 @@ export default function RootLayout({
     const pathname = usePathname()
 
     return (
-        <div className="flex flex-col justify-between items-center w-full lg:flex-row ">
+        <div className="flex flex-col justify-between items-start w-full lg:flex-row ">
             <div className="flex flex-col lg:w-[35%] mt-16 lg:ml-16">
                 <motion.div
                     initial={{ opacity: 0, x: -100 }}

@@ -11,3 +11,5 @@ type HardSkills = {
     'Version Control': Skill[];
     'Tools': Skill[];
 };
+
+type SoftSkills = { name: string, percentage: number }

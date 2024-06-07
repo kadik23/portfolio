@@ -35,3 +35,18 @@ export const hardSkills: HardSkills = {
     ],
 };
 
+export const softSkills: SoftSkills[] = [
+    { name: 'Project Manager', percentage: 60},
+    { name: 'Problem Solving', percentage: 55},
+    { name: 'Team Work', percentage: 75},
+    { name: 'Time Management', percentage: 80},
+    { name: 'Adaptability', percentage: 70},
+    { name: 'Organization', percentage: 75},
+]
+
+export const languages: SoftSkills[] = [
+    { name: 'Arabic', percentage:100},
+    { name: 'English', percentage:60},
+    { name: 'French', percentage:40}
+]
+
