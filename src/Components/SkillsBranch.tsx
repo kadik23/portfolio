@@ -25,12 +25,12 @@ function SkillsBranch({ index, skills, field, order }: { index: number, skills: 
         <div className={`flex flex-col gap-8 items-start w-full mr-4 lg:mr-0 mt-16  ${xlMarginTopClass}`}>
             <div className={`flex items-center w-auto `}>
                 <div 
-                        className={`rounded-full text-center px-5 py-2 border-2 border-green order-2 lg:order-${order}`} 
+                        className={`rounded-full text-center px-5 py-2 border-2 border-green order-2 ${order === 1 ? 'lg:order-1' : 'lg:order-2'}`} 
                         style={{ width: '11rem', borderRadius: '50% / 100%', boxShadow: '0 0 12px 2px #11F7D0' }}
                     >
                         {field}
                 </div> 
-                <hr className={`border-2 border-green w-24 lg:w-40 order-1 lg:order-${order === 1 ? '2' : '1'}`} />
+                <hr className={`border-2 border-green w-20 lg:w-40 order-1 ${order === 1 ? 'lg:order-2' : 'lg:order-1'}`} />
             </div>
             <div className={`flex ${order === 2 ? 'flex-row-reverse justify-start' : ' justify-end'}  gap-2 px-4 w-full`}>
                 {skills.map((skill, index) => (
