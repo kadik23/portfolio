@@ -40,3 +40,11 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-green/45
 }
+
+.text-border {
+  text-shadow: 
+      1px 1px 0 #fff, 
+      -1px -1px 0 #fff, 
+      -1px 1px 0 #fff, 
+      1px -1px 0 #fff;
+}

@@ -13,3 +13,15 @@ type HardSkills = {
 };
 
 type SoftSkills = { name: string, percentage: number }
+
+type Links = { name: string, path: string }
+
+interface Projects  {
+    id: number;
+    title: string;
+    description: string;
+    frameworks: string[];
+    deployments: string | null;
+    code_source: string;
+    image: string;
+}
