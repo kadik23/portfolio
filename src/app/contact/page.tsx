@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import Link from "next/link";
 import { useState } from "react";
 
-export default function contactpage() {
+export default function Contactpage() {
     const [isOpen, setIsOpen] = useState(false);
     const [serviceSelected, setServiceSelected] = useState("Select a service")
     const toggleMenu = () => setIsOpen(!isOpen);
