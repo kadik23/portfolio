@@ -94,9 +94,9 @@ export default function contactpage() {
                 </div>
             </div>
             <motion.div
-                                initial={{ opacity: 0, y: 30 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.75, delay: 0.2 }} className="order-2 lg:order-1 bg-light-gray px-4 py-6 rounded-lg flex flex-col items-center lg:items-start justify-center">
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.75, delay: 0.2 }} className="order-2 lg:order-1 bg-light-gray px-4 py-16 lg:py-6 rounded-lg flex flex-col items-center lg:items-start justify-center">
                 <div className="flex flex-col items-center lg:items-start gap-0.5 mb-8">
                     <div className="inika-bold text-green text-2xl">Let’s Work Together</div>
                     <div className="inika-regular text-sm w-3/4 lg:w-auto">Use the form on this page or get in touch by other means.</div>
@@ -107,15 +107,15 @@ export default function contactpage() {
                         <input type="text" className="placeholder:text-opacity-50 px-2 py-1 outline-none focus:ring-2 focus:ring-green/50 rounded-md bg-dark-gray placeholder:text-sm" placeholder="Lastname" />
                     </div>
                     <div className="flex flex-col lg:flex-row gap-4">
-                        <input type="text" className="placeholder:text-opacity-50 px-2 py-1 outline-none focus:ring-2 focus:ring-green/50 rounded-md bg-dark-gray placeholder:text-sm" placeholder="Email" />
-                        <input type="text" className="placeholder:text-opacity-50 px-2 py-1 outline-none focus:ring-2 focus:ring-green/50 rounded-md bg-dark-gray placeholder:text-sm" placeholder="Phone number" />
+                        <input type="email" className="placeholder:text-opacity-50 px-2 py-1 outline-none focus:ring-2 focus:ring-green/50 rounded-md bg-dark-gray placeholder:text-sm" placeholder="Email" />
+                        <input type="phone" className="placeholder:text-opacity-50 px-2 py-1 outline-none focus:ring-2 focus:ring-green/50 rounded-md bg-dark-gray placeholder:text-sm" placeholder="Phone number" />
                     </div>
                     <div className="relative">
                         <motion.div
                             onClick={toggleMenu}
-                            className="flex items-center justify-between  cursor-pointer px-2 py-1 rounded-md bg-dark-gray "
+                            className={`flex items-center justify-between ${isOpen ? 'ring-2 ring-green/50' : '' } cursor-pointer px-2 py-1 rounded-md bg-dark-gray `}
                         >
-                            <span className="text-white/50">{serviceSelected}</span>
+                            <span className={`${serviceSelected == "Select a service" ? 'text-white/50' : '' }`}>{serviceSelected}</span>
                             <Icon icon="mdi:chevron-down" width="24" height="24" />
                         </motion.div>
                         {isOpen && (
