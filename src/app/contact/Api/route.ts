@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { google } from 'googleapis';
-
-const apiKey = process.env.SHEET_ID;
+import { sheets_v4 } from 'googleapis/build/src/apis/sheets/v4';
 
 export async function POST(req: NextRequest) {
     try {
@@ -10,7 +9,7 @@ export async function POST(req: NextRequest) {
             scopes: ['https://www.googleapis.com/auth/spreadsheets'],
         });
 
-        const sheets = google.sheets({ version: 'v4', auth });
+        const sheets = google.sheets({ version: 'v4', auth }) as sheets_v4.Sheets;
         const body = await req.json();
         const { Firstname, Lastname, Email, Phone, Service, Message } = body;
 
@@ -19,11 +18,10 @@ export async function POST(req: NextRequest) {
         }
 
         await sheets.spreadsheets.values.append({
-            auth,
-            spreadsheetId: apiKey,
+            spreadsheetId: process.env.SHEET_ID,
             range: 'Contact!A:F',
             valueInputOption: 'USER_ENTERED',
-            resource: {
+            requestBody: {
                 values: [
                     [Firstname, Lastname, Email, Phone, Service, Message],
                 ],
