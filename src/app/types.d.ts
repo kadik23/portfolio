@@ -25,3 +25,12 @@ interface Projects  {
     code_source: string;
     image: string;
 }
+
+interface Contact {
+    Firstname: string;
+    Lastname: string;
+    Email: string;
+    'Phone number': string;
+    Service: string;
+    Message: string;
+}
