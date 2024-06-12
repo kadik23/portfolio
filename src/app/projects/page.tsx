@@ -70,7 +70,7 @@ export default function ProjectsPage() {
                 className="w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center bg-white/20 hover:opacity-60 duration-200 active:scale-105 transition-all rounded-full absolute top-[40%] lg:top-1/2 left-4 cursor-pointer"
                 onClick={movePrevious}
             >
-                <Icon icon="mingcute:left-fill" width="24" height="24" className="" />
+                <Icon icon="mingcute:left-fill" width="24" height="24" className="text-green" />
             </div>
             <div
                 ref={slider}
@@ -84,7 +84,7 @@ export default function ProjectsPage() {
                 className="w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center bg-white/20 hover:opacity-60 duration-200 active:scale-105 transition-all rounded-full absolute top-[40%] lg:top-1/2 right-4 cursor-pointer"
                 onClick={moveNext}
             >
-                <Icon icon="mingcute:right-fill" width="24" height="24" className="" />
+                <Icon icon="mingcute:right-fill" width="24" height="24" className="text-green" />
             </div>
             <div className=" items-center gap-2 justify-center w-full mt-4 hidden lg:flex">
                 {projects.map((_, index) => (
