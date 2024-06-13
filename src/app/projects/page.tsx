@@ -62,7 +62,7 @@ export default function ProjectsPage() {
                 transition={{ duration: 0.5 }}
                 className="mt-24 ml-4 mx-4"
             >
-                <div className="inika-bold text-lg xl:text-xl flex gap-2 relative">
+                <div className="inika-bold text-lg lg:ml-12 xl:text-xl flex gap-2 relative">
                     My <div className="text-green">projects</div>
                 </div>
             </motion.div>
@@ -74,7 +74,7 @@ export default function ProjectsPage() {
             </div>
             <div
                 ref={slider}
-                className="flex overflow-hidden transition-transform duration-500 ease-linear w-screen mx-4 mt-4"
+                className="flex items-center overflow-hidden transition-transform duration-500 ease-linear w-screen mx-4 mt-4"
             >
                 {projects.map((project, index) => (
                     <Project project={project} key={index} />

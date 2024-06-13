@@ -1,8 +1,8 @@
 "use client";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef  } from "react";
 
 export default function Contactpage() {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +17,10 @@ export default function Contactpage() {
     });
     const [message, setMessage] = useState("");
     const toggleMenu = () => setIsOpen(!isOpen);
+    const ref = useRef(null);
+    const ref2 = useRef(null);
+    const isInView = useInView(ref, { once: true });
+    const isInView2 = useInView(ref2, { once: true });
 
     const handleServiceSelection = (serviceName:string) => {
         setServiceSelected(serviceName);
@@ -53,8 +57,9 @@ export default function Contactpage() {
             <div className="flex flex-col justify-start w-full gap-8 order-1 lg:order-2">
                 <div className="flex flex-col gap-4 items-start">
                     <motion.div
+                        ref={ref}
                         initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        animate={isInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 1, delay: 0.2 }}
                         className="text-green inika-bold text-lg"
                     >
@@ -62,8 +67,9 @@ export default function Contactpage() {
                     </motion.div>
                     <div className="flex flex-col items-start gap-2 ">
                         <motion.div
+                            ref={ref}
                             initial={{ opacity: 0, y: 30 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            animate={isInView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 1.25, delay: 0.2 }}
                             className="flex gap-4"
                         >
@@ -84,8 +90,9 @@ export default function Contactpage() {
                             </div>
                         </motion.div>
                         <motion.div
+                            ref={ref}
                             initial={{ opacity: 0, y: 30 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            animate={isInView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 1.5, delay: 0.2 }}
                             className="flex gap-4"
                         >
@@ -106,8 +113,9 @@ export default function Contactpage() {
                             </div>
                         </motion.div>
                         <motion.div
+                            ref={ref}
                             initial={{ opacity: 0, y: 30 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            animate={isInView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 1.75, delay: 0.2 }}
                             className="flex gap-4"
                         >
@@ -128,8 +136,9 @@ export default function Contactpage() {
                 </div>
                 <div className="flex flex-col gap-4 items-start">
                     <motion.div
+                        ref={ref}
                         initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        animate={isInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 2.25, delay: 0.2 }}
                         className="text-green inika-bold text-lg"
                     >
@@ -137,8 +146,9 @@ export default function Contactpage() {
                     </motion.div>
                     <div className="flex flex-col items-start gap-2 ">
                         <motion.div
+                            ref={ref}
                             initial={{ opacity: 0, y: 30 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            animate={isInView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 2.5, delay: 0.2 }}
                             className="flex gap-4  "
                         >
@@ -159,8 +169,9 @@ export default function Contactpage() {
                             </div>
                         </motion.div>
                         <motion.div
+                            ref={ref}
                             initial={{ opacity: 0, y: 30 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            animate={isInView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 2.75, delay: 0.2 }}
                             className="flex gap-4"
                         >
@@ -184,8 +195,9 @@ export default function Contactpage() {
                 </div>
             </div>
             <motion.div
+                ref={ref2}
                 initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                animate={isInView2 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.75, delay: 0.2 }}
                 className="order-2 lg:order-1 bg-light-gray px-4 py-16 lg:py-6 rounded-lg flex flex-col items-center lg:items-start justify-center"
             >

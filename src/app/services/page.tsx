@@ -21,7 +21,7 @@ export default function servicespage(){
             </div>
             <div className="inika-bold text-2xl xl:text-4xl ">What I Do</div>
         </motion.div>
-        <div className="flex flex-wrap gap-4 mt-16 justify-center mx-4">
+        <div className="flex flex-wrap gap-4 mt-16 justify-center mx-4 mb-4">
             {services.map((service, index) => (
                 <ServiceCard key={index} delay={(index+1)/2} service={service.service} icon={service.icon} detail={service.detail} />
             ))}

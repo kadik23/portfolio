@@ -1,6 +1,5 @@
 "use client"
 import InformationsCard from "@/Components/InformationsCard";
-import { motion } from "framer-motion";
 // import { Metadata } from "next";
 
 // export const metadata: Metadata = {
