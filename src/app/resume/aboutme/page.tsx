@@ -8,7 +8,7 @@ import { useRef } from "react";
 //     title: "aboutme"
 // };
 
-export default function aboutMepage(){
+export default function AboutMepage(){
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 

@@ -55,7 +55,7 @@ export default function RootLayout({
                     </div>
                     <div className="w-[20rem]">
                         <div className="inika-bold text-2xl lg:text-5xl text-nowrap">Why hire me?</div>
-                        <div className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+                        <div className="text-sm">I am a highly skilled and dedicated professional with a passion for web development and design.</div>
                     </div>
                 </motion.div>
                 <div className="w-[20rem] mx-4 mt-4 mb-8 flex flex-col gap-2">
