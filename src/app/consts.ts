@@ -1,4 +1,4 @@
-export const links: Links[] = [{ name: 'home', path: '' }, { name: 'services', path: 'services' }, { name: 'resume', path: 'resume/experience' }, { name: 'projects', path: 'projects' }, { name: 'contact', path: 'contact' }]
+export const links: Links[] = [{ name: 'home', path: 'home' }, { name: 'services', path: 'services' }, { name: 'resume', path: 'resume/experience' }, { name: 'projects', path: 'projects' }, { name: 'contact', path: 'contact' }]
 
 export const hardSkills: HardSkills = {
     'Front End': [
