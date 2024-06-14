@@ -2,6 +2,7 @@ import { projects } from "@/app/consts";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image";
 import Link from "next/link";
+import { Tooltip } from "react-tooltip";
 
 interface ProjectProps {
     project: Projects;
@@ -32,12 +33,18 @@ function Project({ project }: ProjectProps) {
                         ))}
                     </div>
                     <div className="flex gap-2 items-center  mt-4">
-                        <Link href={project.code_source}>
+                        <Link href={project.code_source} data-tooltip-id={`tooltip-2`} data-tooltip-content='Code source'>
                             <Icon icon="mdi:github" width="24" height="24" className="hover:scale-105 hover:text-green transition-all duration-200 cursor-pointer" />
                         </Link>
+                        <Tooltip id='tooltip-2' />
                         {project.deployments && (
-                            <Link href={project.deployments}>
+                            <Link 
+                                href={project.deployments}
+                                data-tooltip-id={`tooltip-1`}
+                                data-tooltip-content='Preview'     
+                            >
                                 <Icon icon="mage:preview-fill" width="24" height="24" className="hover:scale-105 hover:text-green transition-all duration-200 cursor-pointer" />
+                                <Tooltip id='tooltip-1' />
                             </Link>
                         )}
                     </div>

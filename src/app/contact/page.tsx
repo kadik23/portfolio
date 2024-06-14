@@ -53,7 +53,7 @@ export default function Contactpage() {
     };
 
     return (
-        <div className="flex flex-col gap-16 py-8 px-4 mt-16 ml-4 justify-start items-start w-screen lg:flex-row lg:gap-64 lg:px-16">
+        <div className="flex flex-col gap-16 py-8 px-4 mt-16 ml-4 justify-start items-start lg:flex-row lg:gap-64 lg:px-16">
             <div className="flex flex-col justify-start w-full gap-8 order-1 lg:order-2">
                 <div className="flex flex-col gap-4 items-start">
                     <motion.div

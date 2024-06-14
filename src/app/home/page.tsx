@@ -54,7 +54,7 @@ export default function Home() {
           <div className="inika-bold text-2xl lg:text-4xl sm:text-2xl px-6">
             <Typewriter
               options={{
-                strings: ['Hello', 'I’m Salah,', 'CS Student'],
+                strings: ['Hello', 'I’m Salah,', 'CS Student', 'Web Developer', ],
                 autoStart: true,
                 loop: true,
                 cursor: "|",
