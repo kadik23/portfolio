@@ -17,15 +17,41 @@ function Header() {
 
     const pathname = usePathname();
 
+    const containerVariants = {
+        hidden: { opacity: 0, y: -50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+    };
+
+    const typingContainer = {
+        hidden: { opacity: 1 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.5,
+            }
+        }
+    };
+
+    const typingText = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 }
+    };
+
+    const textArray = "<S/>".split("");
+
     return (
         <motion.div
             className="w-full flex justify-between items-center bg-dark-gray p-4 fixed top-0 left-0 z-10"
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
         >
             <Link href={'/home'} className="font-semibold text-xl flex items-center inika-bold hover:scale-105 transition-all duration-500">
-                <div className="text-green mr-2">{'<S/>'}</div>
+                <motion.div className="text-green mr-2" variants={typingContainer} initial="hidden" animate="visible">
+                    {textArray.map((char, index) => (
+                        <motion.span key={index} variants={typingText}>{char}</motion.span>
+                    ))}
+                </motion.div>
                 <div>Salah Eddine</div>
             </Link>
             <Links />
@@ -65,7 +91,7 @@ function Header() {
                             {links.map(link => {
                                 const isActive = pathname.startsWith(`/${link.path}`)
                                 return (
-                                    <Link key={link.name} onClick={()=>setMenuOpen(prev => !prev )} href={`/${link.path}`} className={`capitalize hover:text-green transition-colors duration-100 py-1 px-2 m-1 ${isActive ? 'text-green' : 'text-white'}`}>
+                                    <Link key={link.name} onClick={() => setMenuOpen(prev => !prev)} href={`/${link.path}`} className={`capitalize hover:text-green transition-colors duration-100 py-1 px-2 m-1 ${isActive ? 'text-green' : 'text-white'}`}>
                                         {isActive ? '<' : ''} {link.name} {isActive ? '>' : ''}
                                     </Link>
                                 )
@@ -87,7 +113,7 @@ function Header() {
                     </motion.div>
                 )}
             </AnimatePresence>
-        </motion.div >
+        </motion.div>
     )
 }
 
