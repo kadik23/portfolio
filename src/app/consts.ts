@@ -57,14 +57,14 @@ export const projects: Projects[] = [
         description: '     A Coding Challenges & Hiring Platform connects developers and companies through skill-based challenges, facilitating efficient hiring and learning.',
         frameworks: [ 'React Js', 'Type Script', 'Tailwind Css', 'Express Js', 'My sql', 'Docker'],
         deployments: 'https://www.awesomescreenshot.com/video/27909909',
-        code_source: 'https://github.com/code-craft-project/code-craft-frontend',
+        code_source: 'https://github.com/code-craft-project',
         image:'01.png' 
     },
     {
         id: 2,
         title:'Novalance',
         description: 'A Novalance is an online platform that connects freelancers with clients who need their services. These websites provide a space where freelancers can showcase their skills, and clients can post projects or tasks that they need help with.',
-        frameworks: [ 'Vue Js', 'Laravel', 'Tailwind Css', 'Express Js', 'Node Js', 'Web Socket'],
+        frameworks: [ 'Vue Js', 'Laravel', 'Tailwind Css', 'Node Js', 'Web Socket'],
         deployments: 'https://novalance.onrender.com/',
         code_source: 'https://github.com/kadik23/Novalance?tab=readme-ov-file',
         image:'02.png' 
@@ -73,8 +73,8 @@ export const projects: Projects[] = [
         id: 3,
         title:'Stanissk Store',
         description: 'Stanissk Store is eCommerce web app, online platform that allows users to browse, search, and purchase products or services over the internet with online payment feature.',
-        frameworks: [ 'Laravel','Blade', 'Tailwind Css', 'My Sql',],
-        deployments: null,
+        frameworks: [ 'Laravel','Vue Js','Type Script','Blade', 'Tailwind Css', 'My Sql',],
+        deployments: 'https://stanissk-store.onrender.com/',
         code_source: 'https://github.com/kadik23/ecommerce-app',
         image:'03.png' 
     },
@@ -92,7 +92,7 @@ export const projects: Projects[] = [
         title:'Doctor Appointment',
         description: 'A Web Application to make an appointment with Doctors easily. ',
         frameworks: [ 'Mern Stack','Tailwind Css', 'Type Script', 'Prisma',],
-        deployments: null,
+        deployments: "https://doctor-appointment-5-btf0.onrender.com/home",
         code_source: 'https://github.com/kadik23/doctor-appointment',
         image:'05.png' 
     },
