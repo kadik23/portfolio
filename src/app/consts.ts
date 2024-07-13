@@ -9,6 +9,7 @@ export const hardSkills: HardSkills = {
         { name: 'Vue js', icon: 'mdi:vuejs' },
         { name: 'React js', icon: 'teenyicons:react-solid' },
         { name: 'TS', icon: 'fluent:code-ts-rectangle-16-filled' },
+        { name: 'Zustand', icon: 'eos-icons:compare-states' },
     ],
     'Back End': [
         { name: 'Php', icon: 'simple-icons:php' },
@@ -73,7 +74,7 @@ export const projects: Projects[] = [
         id: 3,
         title:'Stanissk Store',
         description: 'Stanissk Store is eCommerce web app, online platform that allows users to browse, search, and purchase products or services over the internet with online payment feature.',
-        frameworks: [ 'Laravel','Vue Js','Type Script','Blade', 'Tailwind Css', 'My Sql',],
+        frameworks: [ 'Laravel','Vue Js','Type Script','Blade', 'Tailwind Css', 'My Sql','Docker'],
         deployments: 'https://stanissk-store.onrender.com/',
         code_source: 'https://github.com/kadik23/ecommerce-app',
         image:'03.png' 
