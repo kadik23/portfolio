@@ -8,15 +8,19 @@ export const hardSkills: HardSkills = {
         { name: 'Tailwind', icon: 'teenyicons:tailwind-solid' },
         { name: 'Vue js', icon: 'mdi:vuejs' },
         { name: 'React js', icon: 'teenyicons:react-solid' },
-        { name: 'TS', icon: 'fluent:code-ts-rectangle-16-filled' },
         { name: 'Zustand', icon: 'eos-icons:compare-states' },
+        { name: 'Apolo GraphQl', icon: 'grommet-icons:graph-ql' },
     ],
     'Back End': [
         { name: 'Php', icon: 'simple-icons:php' },
         { name: 'Laravel', icon: 'simple-icons:laravel' },
         { name: 'Node Js', icon: 'mdi:nodejs' },
         { name: 'Express Js', icon: 'simple-icons:express' },
+        { name: 'TS', icon: 'fluent:code-ts-rectangle-16-filled' },
         { name: 'Next Js', icon: 'file-icons:nextjs' },
+        { name: 'Docker', icon: 'mdi:docker' },
+        { name: 'Web Socket', icon: 'logos:websocket' },
+        
     ],
     'Database System': [
         { name: 'MySql', icon: 'simple-icons:mysql' },
@@ -84,7 +88,7 @@ export const projects: Projects[] = [
         title:'Zenstay',
         description: '  Zenstay is an online platform that allows users to reserve rooms for various purposes with online payment methods.',
         frameworks: [ 'Mern Stack','Bootstrap',],
-        deployments: null,
+        deployments: 'https://zenstay-5m2rdutrf-kadik23s-projects.vercel.app/',
         code_source: 'https://github.com/kadik23/Zenstay',
         image:'04.png' 
     },
