@@ -61,7 +61,7 @@ export const projects: Projects[] = [
         title:'Coding Challenges  & Hiring Platform',
         description: '     A Coding Challenges & Hiring Platform connects developers and companies through skill-based challenges, facilitating efficient hiring and learning.',
         frameworks: [ 'React Js', 'Type Script', 'Tailwind Css', 'Express Js', 'My sql', 'Docker'],
-        deployments: 'https://www.awesomescreenshot.com/video/27909909',
+        deployments: 'https://code-craft-front.vercel.app/',
         code_source: 'https://github.com/code-craft-project',
         image:'01.png' 
     },
@@ -79,7 +79,7 @@ export const projects: Projects[] = [
         title:'Stanissk Store',
         description: 'Stanissk Store is eCommerce web app, online platform that allows users to browse, search, and purchase products or services over the internet with online payment feature.',
         frameworks: [ 'Laravel','Vue Js','Type Script','Blade', 'Tailwind Css', 'My Sql','Docker'],
-        deployments: 'https://stanissk-store.onrender.com/',
+        deployments: 'https://ecommerce-app-laravel.onrender.com/',
         code_source: 'https://github.com/kadik23/ecommerce-app',
         image:'03.png' 
     },
