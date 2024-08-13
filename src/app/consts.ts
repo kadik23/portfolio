@@ -88,7 +88,7 @@ export const projects: Projects[] = [
         title:'Zenstay',
         description: '  Zenstay is an online platform that allows users to reserve rooms for various purposes with online payment methods.',
         frameworks: [ 'Mern Stack','Bootstrap',],
-        deployments: 'https://zenstay-5m2rdutrf-kadik23s-projects.vercel.app/',
+        deployments: 'https://zenstay-two.vercel.app/',
         code_source: 'https://github.com/kadik23/Zenstay',
         image:'04.png' 
     },
