@@ -19,7 +19,7 @@ export const hardSkills: HardSkills = {
         { name: 'TS', icon: 'fluent:code-ts-rectangle-16-filled' },
         { name: 'Next Js', icon: 'file-icons:nextjs' },
         { name: 'Docker', icon: 'mdi:docker' },
-        { name: 'Web Socket', icon: 'logos:websocket' },
+        { name: 'Web Socket', icon: 'simple-icons:socketdotio' },
         
     ],
     'Database System': [
@@ -28,12 +28,16 @@ export const hardSkills: HardSkills = {
         { name: 'Prisma', icon: 'simple-icons:prisma' },
     ],
     'Apps Mobile': [
-        { name: 'Java', icon: 'devicon-plain:java' },
         { name: 'React Native', icon: 'teenyicons:react-solid' },
     ],
     'Version Control': [
         { name: 'Git', icon: 'teenyicons:git-solid' },
         { name: 'Github', icon: 'mdi:github' },
+    ],
+    'Other': [
+        { name: 'C', icon: 'bxl:c-plus-plus' },
+        { name: 'C++', icon: 'hugeicons:c-programming' },
+        { name: 'Java', icon: 'devicon-plain:java' },
     ],
     'Tools': [
         { name: 'Figma', icon: 'solar:figma-bold' },
@@ -69,7 +73,7 @@ export const projects: Projects[] = [
         id: 2,
         title:'Novalance',
         description: 'A Novalance is an online platform that connects freelancers with clients who need their services. These websites provide a space where freelancers can showcase their skills, and clients can post projects or tasks that they need help with.',
-        frameworks: [ 'Vue Js', 'Laravel', 'Tailwind Css', 'Node Js', 'Web Socket'],
+        frameworks: [ 'Vue Js', 'Laravel', 'Tailwind Css', 'Node Js', 'Web Socket','Docker'],
         deployments: 'https://novalance-y62r.onrender.com/',
         code_source: 'https://github.com/kadik23/Novalance?tab=readme-ov-file',
         image:'02.png' 
@@ -78,7 +82,7 @@ export const projects: Projects[] = [
         id: 3,
         title:'Stanissk Store',
         description: 'Stanissk Store is eCommerce web app, online platform that allows users to browse, search, and purchase products or services over the internet with online payment feature.',
-        frameworks: [ 'Laravel','Vue Js','Type Script','Blade', 'Tailwind Css', 'My Sql','Docker'],
+        frameworks: [ 'Laravel','Vue Js','Type Script','Blade', 'Tailwind Css', 'My Sql','Docker','Pusher'],
         deployments: 'https://ecommerce-app-laravel.onrender.com/',
         code_source: 'https://github.com/kadik23/ecommerce-app',
         image:'03.png' 
@@ -87,7 +91,7 @@ export const projects: Projects[] = [
         id: 4,
         title:'Zenstay',
         description: '  Zenstay is an online platform that allows users to reserve rooms for various purposes with online payment methods.',
-        frameworks: [ 'Mern Stack','Bootstrap',],
+        frameworks: [ 'Mern Stack','Bootstrap','Zustand'],
         deployments: 'https://zenstay-two.vercel.app/',
         code_source: 'https://github.com/kadik23/Zenstay',
         image:'04.png' 

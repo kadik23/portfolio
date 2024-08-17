@@ -10,6 +10,7 @@ type HardSkills = {
     'Apps Mobile': Skill[];
     'Version Control': Skill[];
     'Tools': Skill[];
+    'Other': Skill[];
 };
 
 type SoftSkills = { name: string, percentage: number }

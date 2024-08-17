@@ -42,7 +42,7 @@ function Skillspage() {
           <div>
             {skillsComponents.filter((_: any, index: number) => index % 2 === 0)}
           </div>
-          <hr className='border-2 border-green h-[46rem]' />
+          <hr className='border-2 border-green h-[75rem] lg:h-[60rem]' />
           <div className='pr-4'>
             {skillsComponents.filter((_, index) => index % 2 !== 0)}
           </div>
