@@ -18,26 +18,34 @@ export const hardSkills: HardSkills = {
         { name: 'Express Js', icon: 'simple-icons:express' },
         { name: 'TS', icon: 'fluent:code-ts-rectangle-16-filled' },
         { name: 'Next Js', icon: 'file-icons:nextjs' },
-        { name: 'Docker', icon: 'mdi:docker' },
         { name: 'Web Socket', icon: 'simple-icons:socketdotio' },
-        
+        { name: 'Hono Js', icon: 'simple-icons:hono' },  
     ],
     'Database System': [
         { name: 'MySql', icon: 'simple-icons:mysql' },
         { name: 'MongoDb', icon: 'devicon-plain:mongodb' },
         { name: 'Prisma', icon: 'simple-icons:prisma' },
+        { name: 'PgSql', icon: 'cib:postgresql' },
+        { name: 'Drizzle', icon: 'lineicons:drizzle' },
+        { name: 'Sqlite', icon: 'file-icons:sqlite' },
     ],
-    'Apps Mobile': [
+    'Mobile Apps': [
         { name: 'React Native', icon: 'teenyicons:react-solid' },
     ],
-    'Version Control': [
+    'Desktop Apps': [
+        { name: 'Electron Js', icon: 'file-icons:electron' },
+    ],
+    'Devops': [
         { name: 'Git', icon: 'teenyicons:git-solid' },
         { name: 'Github', icon: 'mdi:github' },
+        { name: 'Docker', icon: 'mdi:docker' },
+        { name: 'Turborepo', icon: 'simple-icons:turborepo' },
     ],
     'Other': [
         { name: 'C', icon: 'bxl:c-plus-plus' },
         { name: 'C++', icon: 'hugeicons:c-programming' },
         { name: 'Java', icon: 'devicon-plain:java' },
+        { name: 'Python', icon: 'akar-icons:python-fill' },
     ],
     'Tools': [
         { name: 'Figma', icon: 'solar:figma-bold' },
@@ -107,11 +115,20 @@ export const projects: Projects[] = [
     },
     {
         id: 6,
+        title:'Techverse',
+        description: 'Website for club Which represents all the activities and members of the club',
+        frameworks: [ 'React','Shadcn','Tailwind','Typescript',],
+        deployments: 'https://techverse-club-two.vercel.app/',
+        code_source: 'https://github.com/saidseghirakram/techverse_club',
+        image:'06.png' 
+    },
+    {
+        id: 7,
         title:'Cs Department Management',
         description: 'Web application to manage the computer science department like Adminstraters, Teachers and Students',
         frameworks: [ 'Php','Html','Css','My Sql',],
         deployments: 'https://cs-departement-management.000webhostapp.com/',
         code_source: 'https://github.com/kadik23/cs-department-management',
-        image:'06.png' 
+        image:'07.png' 
     },
 ]

@@ -7,8 +7,9 @@ type HardSkills = {
     'Front End': Skill[];
     'Back End': Skill[];
     'Database System': Skill[];
-    'Apps Mobile': Skill[];
-    'Version Control': Skill[];
+    'Mobile Apps': Skill[];
+    'Desktop Apps': Skill[];
+    'Devops': Skill[];
     'Tools': Skill[];
     'Other': Skill[];
 };
