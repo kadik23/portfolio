@@ -91,7 +91,7 @@ export const projects: Projects[] = [
         title:'Stanissk Store',
         description: 'Stanissk Store is eCommerce web app, online platform that allows users to browse, search, and purchase products or services over the internet with online payment feature.',
         frameworks: [ 'Laravel','Vue Js','Type Script','Blade', 'Tailwind Css', 'My Sql','Docker','Pusher'],
-        deployments: 'https://ecommerce-app-laravel.onrender.com/',
+        deployments: 'https://ecommerce-app-chi-eight.vercel.app/',
         code_source: 'https://github.com/kadik23/ecommerce-app',
         image:'03.png' 
     },
@@ -127,8 +127,17 @@ export const projects: Projects[] = [
         title:'Cs Department Management',
         description: 'Web application to manage the computer science department like Adminstraters, Teachers and Students',
         frameworks: [ 'Php','Html','Css','My Sql',],
-        deployments: 'https://cs-departement-management.000webhostapp.com/',
+        deployments: null,
         code_source: 'https://github.com/kadik23/cs-department-management',
         image:'07.png' 
+    },
+    {
+        id: 8,
+        title:'Banquet Hall Management',
+        description: 'Desktop application to manage the Banquet Hall like Clients, Reservations, Paiments and Receipts',
+        frameworks: [ 'Electron JS','React JS','Css','Sqlite',],
+        deployments: null,
+        code_source: 'https://github.com/kadik23/banquet-hall-management',
+        image:'08.png' 
     },
 ]

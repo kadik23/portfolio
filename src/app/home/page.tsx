@@ -33,7 +33,7 @@ export default function Home() {
 
     animateValue(setExperience, 2);
     animateValue(setProjects, 10);
-    animateValue(setLanguages, 5);
+    animateValue(setLanguages, 7);
   }, []);
 
   return (
