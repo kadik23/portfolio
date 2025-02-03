@@ -82,7 +82,7 @@ export const projects: Projects[] = [
         title:'Novalance',
         description: 'A Novalance is an online platform that connects freelancers with clients who need their services. These websites provide a space where freelancers can showcase their skills, and clients can post projects or tasks that they need help with.',
         frameworks: [ 'Vue Js', 'Laravel', 'Tailwind Css', 'Node Js', 'Web Socket','Docker'],
-        deployments: 'https://novalance-y62r.onrender.com/',
+        deployments: 'https://novalance-frontend.vercel.app/',
         code_source: 'https://github.com/kadik23/Novalance?tab=readme-ov-file',
         image:'02.png' 
     },
