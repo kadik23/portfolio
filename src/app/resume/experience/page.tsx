@@ -1,32 +1,11 @@
 "use client"
+import { experiecntData } from "@/app/consts";
 import InformationsCard from "@/Components/InformationsCard";
 // import { Metadata } from "next";
 
 // export const metadata: Metadata = {
 //     title: "experience",
 // };
-const experiecntData = [
-    {
-        duration: '2024 - Present',
-        title:'TechVerse Club',
-        content: 'IT Team Leader,Developing and Designing web apps'
-    },
-    {
-        duration: '2024 - Present',
-        title:'Mern Stack Developer',
-        content: 'Implementing projects with medium complexity.'
-    },
-    {
-        duration: 'Summer 2023',
-        title:'Web App Developer',
-        content: 'Developing CRUD system apps using PHP stack.'
-    },
-    {
-        duration: 'Summer 2024',
-        title:'Desktop Apps Developer',
-        content: 'Developing CRUD system apps using Electron Js.'
-    },
-]
 
 export default function experiencepage(){
     return (

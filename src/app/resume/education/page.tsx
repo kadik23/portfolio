@@ -1,24 +1,11 @@
 // "use client"
+import { educationData } from "@/app/consts";
 import InformationsCard from "@/Components/InformationsCard";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "education"
 };
-
-const experiecntData = [
-    {
-        duration: '2022 - 2024',
-        title:'University of yahia fares',
-        content: 'Graduated Bachelor’s degree'
-    },
-    {
-        duration: 'Autumn 2022',
-        title:'Front End Development ',
-        content: 'Online Bootcamp Platform'
-    },
-]
-
 
 export default function educationpage() {
 
@@ -29,7 +16,7 @@ export default function educationpage() {
             <div className="text-center xl:text-start">I am computer science student in university, Graduated Bachelor{"'"}s degree and i’m passionate about programming 3 years. I’m currently a Web Developer</div>
         </div>
         <div className="flex flex-wrap justify-center xl:justify-start gap-4 w-full">
-            {experiecntData.map((experience, index) =>{
+            {educationData.map((experience, index) =>{
                 return (<InformationsCard key={index}  duration = {experience.duration} title={experience.title} content={experience.content}/>)
             })}
         </div>

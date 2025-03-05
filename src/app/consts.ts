@@ -49,6 +49,8 @@ export const hardSkills: HardSkills = {
     ],
     'Tools': [
         { name: 'Figma', icon: 'solar:figma-bold' },
+        { name: 'Notion', icon: 'devicon:notion'},
+        { name: 'Trello', icon: 'mdi:trello'}
     ],
 };
 
@@ -139,5 +141,46 @@ export const projects: Projects[] = [
         deployments: null,
         code_source: 'https://github.com/kadik23/banquet-hall-management',
         image:'08.png' 
+    },
+]
+
+export const experiecntData = [
+    {
+        duration: '2023 - Present',
+        title:'Web, Desktop & Mobile Apps Developer',
+        content: 'Implementing projects with medium complexity using Js & Php frameworks.'
+    },
+    {
+        duration: '2024 - Present',
+        title:'TechVerse Club',
+        content: 'IT Team Leader, Mentoring & Developing and Designing web apps'
+    },
+    {
+        duration: '2024 - Present',
+        title:'Freelance · Software Developer',
+        content: 'Implementing projects with medium complexity.'
+    },
+    {
+        duration: '2024 - Present',
+        title:'Thynk Tech Dz · Internship',
+        content: 'IT Project Manager, Developing front end of web apps'
+    },
+]
+
+export const educationData = [
+    {
+        duration: '2022 - 2024',
+        title:'University of yahia fares',
+        content: 'Graduated Bachelor’s degree'
+    },
+    {
+        duration: 'Autumn 2022',
+        title:'Front End Development ',
+        content: 'Online Bootcamp Platform'
+    },
+    {
+        duration: '2025 - Present',
+        title:'University of yahia fares',
+        content: 'Systems engineering and web technology'
     },
 ]
