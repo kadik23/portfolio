@@ -146,12 +146,7 @@ export const projects: Projects[] = [
 
 export const experiecntData = [
     {
-        duration: '2023 - Present',
-        title:'Web, Desktop & Mobile Apps Developer',
-        content: 'Implementing projects with medium complexity using Js & Php frameworks.'
-    },
-    {
-        duration: '2024 - Present',
+        duration: '2024 - 2025',
         title:'TechVerse Club',
         content: 'IT Team Leader, Mentoring & Developing and Designing web apps'
     },
@@ -164,6 +159,16 @@ export const experiecntData = [
         duration: '2024 - Present',
         title:'Thynk Tech Dz · Internship',
         content: 'IT Project Manager, Developing front end of web apps'
+    },
+    {
+        duration: '2025 - Present',
+        title:'Mustaeidun · Contract',
+        content: 'Implementing ui ux for mobile app + web app and design social media posts.'
+    },
+    {
+        duration: '2025 - Present',
+        title:'Mustaeidun · Contract',
+        content: 'Implementing ui ux for mobile app + web app and design social media posts.'
     },
 ]
 

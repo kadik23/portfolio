@@ -24,7 +24,7 @@ export default function AboutMepage(){
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 1,delay:0.5}}>
                 <div className="text-green">01. About me :</div>
-                <div className="space-x-2 space-y-3">I am Kadik Salah Eddine, a full stack developer and mobile app developer from Algeria. While I hold a banchelor{"'"}s degree in the health and safety field, my true passion lies in web development. Proficient in the MERN stack, React Native, Next.js, and Type Script, I am committed to creating impactful digital experiences and innovative solutions. My constant thirst for knowledge drives me to continuously learn and grow in this dynamic industry.</div>
+                <div className="space-x-2 space-y-3">I'm Kadik Salah Eddine, a full-stack developer and web designer from Algeria. I'm a master's student in systems engineering and web technologies and a bachelor's degree graduate in computer science. My true passion lies in web development. I'm proficient in MERN stack, Next.js, MySQL, and TypeScript, and I'm committed to delivering effective digital experiences and innovative solutions. My never-ending thirst for knowledge drives me to continually learn and grow in this dynamic field. </div>
             </motion.div>
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
