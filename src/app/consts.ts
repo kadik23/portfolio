@@ -142,7 +142,7 @@ export const projects: Projects[] = [
         description: 'Web application to share files between lawyers and clients and blog and services feature with online payments',
         frameworks: [ 'Next JS','React-Hook-Form','Tailwind','My Sql',],
         deployments: 'https://law-site-beryl.vercel.app/',
-        code_source: 'https://github.com/kadik23/cs-department-management',
+        code_source: 'https://github.com/kadik23/law-firm-web-app',
         image:'09.png' 
     },
     {
