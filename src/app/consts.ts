@@ -10,6 +10,7 @@ export const hardSkills: HardSkills = {
         { name: 'React js', icon: 'teenyicons:react-solid' },
         { name: 'Zustand', icon: 'eos-icons:compare-states' },
         { name: 'Apolo GraphQl', icon: 'grommet-icons:graph-ql' },
+        { name: 'Redux', icon: 'simple-icons:redux' },
     ],
     'Back End': [
         { name: 'Php', icon: 'simple-icons:php' },
@@ -134,6 +135,15 @@ export const projects: Projects[] = [
         deployments: null,
         code_source: 'https://github.com/kadik23/cs-department-management',
         image:'07.png' 
+    },
+    {
+        id: 9,
+        title:'Law Firm',
+        description: 'Web application to share files between lawyers and clients and blog and services feature with online payments',
+        frameworks: [ 'Next JS','React-Hook-Form','Tailwind','My Sql',],
+        deployments: 'https://law-site-beryl.vercel.app/',
+        code_source: 'https://github.com/kadik23/cs-department-management',
+        image:'09.png' 
     },
     {
         id: 8,
