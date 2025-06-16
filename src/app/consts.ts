@@ -11,6 +11,7 @@ export const hardSkills: HardSkills = {
         { name: 'Zustand', icon: 'eos-icons:compare-states' },
         { name: 'Apolo GraphQl', icon: 'grommet-icons:graph-ql' },
         { name: 'Redux', icon: 'simple-icons:redux' },
+        { name: 'Ant Design', icon: 'simple-icons:antdesign' },
     ],
     'Back End': [
         { name: 'Php', icon: 'simple-icons:php' },

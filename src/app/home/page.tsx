@@ -72,7 +72,7 @@ export default function Home() {
           </div>
         </div>
         <div className="inika-regular flex lg:flex-row flex-col items-center px-8 w-full lg:w-auto">
-          <Link href="https://drive.google.com/file/d/1fWCrTrSIDMeeTgIvPX1-iI-px7g8Qvc8/view" className="text-green border-2 lg:mr-4 mb-4 border-green rounded-md lg:px-3 lg:py-1 lg:text-xl px-4 py-0.5 text-lg w-44 hover:bg-green hover:text-dark-gray transition-all duration-300 active:scale-105 flex items-center">
+          <Link href="https://drive.google.com/file/d/1Xw6gXvaBaVcFhzgqkLU5nQNEESs__g_Q/view?usp=sharing" className="text-green border-2 lg:mr-4 mb-4 border-green rounded-md lg:px-3 lg:py-1 lg:text-xl px-4 py-0.5 text-lg w-44 hover:bg-green hover:text-dark-gray transition-all duration-300 active:scale-105 flex items-center">
             <Icon icon="hugeicons:file-view" width="20" height="20" className="mr-2" /> View my CV
           </Link>
           <Link href="/contact" className="text-dark-gray text-center bg-green rounded-md mb-4 lg:px-3 lg:py-1.5 lg:text-xl px-4 py-1 text-lg w-44 flex items-center justify-center transition-all duration-300 active:scale-105 hover:opacity-75">
