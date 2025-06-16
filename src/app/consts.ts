@@ -29,6 +29,7 @@ export const hardSkills: HardSkills = {
         { name: 'PgSql', icon: 'cib:postgresql' },
         { name: 'Drizzle', icon: 'lineicons:drizzle' },
         { name: 'Sqlite', icon: 'file-icons:sqlite' },
+        { name: 'Redis', icon: 'devicon-plain:redis-wordmark' },
     ],
     'Mobile Apps': [
         { name: 'React Native', icon: 'teenyicons:react-solid' },
