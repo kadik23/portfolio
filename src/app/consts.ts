@@ -17,6 +17,7 @@ export const hardSkills: HardSkills = {
         { name: 'Node Js', icon: 'mdi:nodejs' },
         { name: 'Express Js', icon: 'simple-icons:express' },
         { name: 'TS', icon: 'fluent:code-ts-rectangle-16-filled' },
+        { name: 'Inertia', icon: 'devicon-plain:inertiajs-wordmark' },  
         { name: 'Next Js', icon: 'file-icons:nextjs' },
         { name: 'Web Socket', icon: 'simple-icons:socketdotio' },
         { name: 'Hono Js', icon: 'simple-icons:hono' },  
@@ -64,9 +65,9 @@ export const softSkills: SoftSkills[] = [
 ]
 
 export const languages: SoftSkills[] = [
-    { name: 'Arabic', percentage:100},
-    { name: 'English', percentage:60},
-    { name: 'French', percentage:40}
+    { name: 'Arabic', percentage:80},
+    { name: 'English', percentage:50},
+    { name: 'French', percentage:25}
 ]
 
 export const projects: Projects[] = [
@@ -156,14 +157,9 @@ export const experiecntData = [
         content: 'Implementing projects with medium complexity.'
     },
     {
-        duration: '2024 - Present',
+        duration: '2024 - 2025',
         title:'Thynk Tech Dz · Internship',
         content: 'IT Project Manager, Developing front end of web apps'
-    },
-    {
-        duration: '2025 - Present',
-        title:'Mustaeidun · Contract',
-        content: 'Implementing ui ux for mobile app + web app and design social media posts.'
     },
     {
         duration: '2025 - Present',
