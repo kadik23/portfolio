@@ -132,13 +132,13 @@ export const projects: Projects[] = [
         id: 7,
         title:'Cs Department Management',
         description: 'Web application to manage the computer science department like Adminstraters, Teachers and Students',
-        frameworks: [ 'Php','Html','Css','My Sql',],
+        frameworks: [ 'Laravel','React Js','Inertia','My Sql', 'Redux', 'TailwindCss'],
         deployments: null,
         code_source: 'https://github.com/kadik23/cs-department-management',
         image:'07.png' 
     },
     {
-        id: 9,
+        id: 8,
         title:'Law Firm',
         description: 'Web application to share files between lawyers and clients and blog and services feature with online payments',
         frameworks: [ 'Next JS','React-Hook-Form','Tailwind','My Sql',],
@@ -147,7 +147,7 @@ export const projects: Projects[] = [
         image:'09.png' 
     },
     {
-        id: 8,
+        id: 9,
         title:'Banquet Hall Management',
         description: 'Desktop application to manage the Banquet Hall like Clients, Reservations, Paiments and Receipts',
         frameworks: [ 'Electron JS','React JS','Css','Sqlite',],
