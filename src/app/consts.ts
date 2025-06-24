@@ -64,7 +64,7 @@ export const softSkills: SoftSkills[] = [
     { name: 'Team Work', percentage: 75},
     { name: 'Time Management', percentage: 80},
     { name: 'Adaptability', percentage: 70},
-    { name: 'Organization', percentage: 75},
+    { name: 'Organization', percentage: 80},
 ]
 
 export const languages: SoftSkills[] = [
@@ -121,15 +121,6 @@ export const projects: Projects[] = [
     },
     {
         id: 6,
-        title:'Techverse',
-        description: 'Website for club Which represents all the activities and members of the club',
-        frameworks: [ 'React','Shadcn','Tailwind','Typescript',],
-        deployments: 'https://techverse-club-two.vercel.app/',
-        code_source: 'https://github.com/saidseghirakram/techverse_club',
-        image:'06.png' 
-    },
-    {
-        id: 7,
         title:'Cs Department Management',
         description: 'Web application to manage the computer science department like Adminstraters, Teachers and Students',
         frameworks: [ 'Laravel','React Js','Inertia','My Sql', 'Redux', 'TailwindCss'],
@@ -138,22 +129,31 @@ export const projects: Projects[] = [
         image:'07.png' 
     },
     {
-        id: 8,
+        id: 7,
         title:'Law Firm',
         description: 'Web application to share files between lawyers and clients and blog and services feature with online payments',
-        frameworks: [ 'Next JS','React-Hook-Form','Tailwind','My Sql',],
+        frameworks: [ 'Next JS','Express Js', 'React-Hook-Form','Tailwind','My Sql',],
         deployments: 'https://law-site-beryl.vercel.app/',
         code_source: 'https://github.com/kadik23/law-firm-web-app',
         image:'09.png' 
     },
     {
-        id: 9,
+        id: 8,
         title:'Banquet Hall Management',
         description: 'Desktop application to manage the Banquet Hall like Clients, Reservations, Paiments and Receipts',
         frameworks: [ 'Electron JS','React JS','Css','Sqlite',],
         deployments: null,
         code_source: 'https://github.com/kadik23/banquet-hall-management',
         image:'08.png' 
+    },
+    {
+        id: 9,
+        title:'Techverse',
+        description: 'Website for club Which represents all the activities and members of the club',
+        frameworks: [ 'React','Shadcn','Tailwind','Typescript',],
+        deployments: 'https://techverse-club-two.vercel.app/',
+        code_source: 'https://github.com/saidseghirakram/techverse_club',
+        image:'06.png' 
     },
 ]
 
