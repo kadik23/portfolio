@@ -91,7 +91,7 @@ export default function ProjectsPage() {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="mt-16 ml-4 mx-4 flex items-center"
+                className="mt-16 ml-4 mx-4 flex items-center flex-col md:flex-row"
             >
                 <div className="inika-bold text-lg lg:ml-12 mr-72 xl:text-xl flex gap-2 items-center relative mb-4">
                     My <div className="text-green">Projects</div>
@@ -105,7 +105,7 @@ export default function ProjectsPage() {
                     <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-1">
                         <button
                             onClick={() => setActiveTab('projects')}
-                            className={`px-6 py-2 text-ss rounded-xl font-medium transition-all duration-300 ${
+                            className={`px-6 py-2 text-xs rounded-xl font-medium transition-all duration-300 ${
                                 activeTab === 'projects'
                                     ? 'bg-green text-white shadow-lg'
                                     : 'text-gray-300 hover:text-white hover:bg-white/10'

@@ -9,8 +9,8 @@ function Language({
 
   return (
         <div className='flex flex-col items-center gap-2'>
-            <div className='text-xl sm:inika-bold capitalize lg:text-sm lg:inika-regular'>{name}: </div>
-            <div className='text-2xl text-nowrap sm:inika-bold font-bold capitalize lg:text-sm lg:inika-regular'>{level}</div>
+            <div className='text-xs sm:inika-bold capitalize lg:text-sm lg:inika-regular'>{name}: </div>
+            <div className='text-lg text-nowrap sm:inika-bold font-bold capitalize lg:inika-regular'>{level}</div>
         </div>  )
 }
 

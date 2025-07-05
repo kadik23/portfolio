@@ -31,7 +31,7 @@ function Project({ project }: ProjectProps) {
                             height={500} 
                             width={300} 
                             alt="Description of image" 
-                            className="w-[90%] rounded-lg shadow-2xl" 
+                            className="md:w-[90%] w-full rounded-lg shadow-2xl" 
                         />
                     </motion.div>
                     <div className="items-center gap-2 justify-center w-full mt-4 lg:hidden flex">
@@ -43,7 +43,7 @@ function Project({ project }: ProjectProps) {
                                     const event = new CustomEvent('goToProject', { detail: index });
                                     window.dispatchEvent(event);
                                 }}
-                                className={`w-3 h-3 rounded-full transition-all duration-300 hover:scale-125 cursor-pointer ${
+                                className={`md:w-3 md:h-3 w-2 h-2 rounded-full transition-all duration-300 hover:scale-125 cursor-pointer ${
                                     project.id === index+1 ? "bg-green scale-125" : "bg-light-gray hover:bg-green/50"
                                 }`}
                                 aria-label={`Go to project ${index + 1}`}
@@ -64,7 +64,7 @@ function Project({ project }: ProjectProps) {
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.3 }}
-                        className="text-2xl text-nowrap w-52 inika-bold mt-2 hover:text-green transition-colors duration-300"
+                        className="text-2xl md:text-wrap lg:text-nowrap w-52 inika-bold mt-2 hover:text-green transition-colors duration-300"
                     >
                         {project.title}
                     </motion.div>
@@ -72,7 +72,7 @@ function Project({ project }: ProjectProps) {
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.4 }}
-                        className="space-2 inika-regular capitalize mt-4 w-80 lg:w-[32rem] first-letter:ml-4"
+                        className="space-2 inika-regular capitalize mt-4 lg:w-[32rem] first-letter:ml-4"
                     >
                         {project.description}
                     </motion.div>
@@ -99,7 +99,7 @@ function Project({ project }: ProjectProps) {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.7 }}
-                        className="flex gap-4 items-center mt-6"
+                        className="flex gap-4 items-center flex-col md:flex-row mt-6"
                     >
                         <Link 
                             href={project.code_source} 

@@ -12,8 +12,8 @@ function page() {
         ))}
       </div>
       <div className="flex flex-col my-8 w-full">
-        <div className="text-xl inika-bold">Languages</div>
-        <div className="my-8 lg:my-2 w-full flex flex-row gap-8 ">
+        <div className="text-xl inika-bold text-center md:text-start">Languages</div>
+        <div className="my-8 lg:my-2 w-full flex flex-wrap gap-8 justify-center md:justify-start">
           {languages.map((language, index) => (
             <Language key={index} name={language.name} level={language.level} />
           ))}
