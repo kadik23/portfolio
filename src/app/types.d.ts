@@ -14,7 +14,7 @@ type HardSkills = {
     'Other': Skill[];
 };
 
-type SoftSkills = { name: string, percentage: number }
+type SoftSkills = { name: string, level: string }
 
 type Links = { name: string, path: string }
 
@@ -26,6 +26,14 @@ interface Projects  {
     deployments: string | null;
     code_source: string;
     image: string;
+}
+
+interface Contribution {
+    id: number;
+    name: string;
+    link: string;
+    description: string;
+    languages: string[];
 }
 
 interface Contact {

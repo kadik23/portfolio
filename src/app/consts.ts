@@ -59,24 +59,24 @@ export const hardSkills: HardSkills = {
 };
 
 export const softSkills: SoftSkills[] = [
-    { name: 'Project Manager', percentage: 60},
-    { name: 'Problem Solving', percentage: 55},
-    { name: 'Team Work', percentage: 75},
-    { name: 'Time Management', percentage: 80},
-    { name: 'Adaptability', percentage: 70},
-    { name: 'Organization', percentage: 80},
+    { name: 'Project Manager', level: "60"},
+    { name: 'Problem Solving', level: "55"},
+    { name: 'Team Work', level: "75"},
+    { name: 'Time Management', level: "80"},
+    { name: 'Adaptability', level: "70"},
+    { name: 'Organization', level: "80"},
 ]
 
 export const languages: SoftSkills[] = [
-    { name: 'Arabic', percentage:80},
-    { name: 'English', percentage:50},
-    { name: 'French', percentage:25}
+    { name: 'Arabic', level: "Native or bilingual proficiency"},
+    { name: 'English', level: "Professional working proficiency"},
+    { name: 'French', level: "Limited working proficiency"}
 ]
 
 export const projects: Projects[] = [
     {
         id: 1,
-        title:'Coding Challenges  & Hiring Platform',
+        title:'Coding Challenges & Hiring Platform',
         description: '     A Coding Challenges & Hiring Platform connects developers and companies through skill-based challenges, facilitating efficient hiring and learning.',
         frameworks: [ 'Layered Architecture','React Js', 'Type Script', 'Tailwind Css', 'Express Js', 'My sql', 'Docker'],
         deployments: 'https://code-craft-front.vercel.app/',
@@ -113,7 +113,7 @@ export const projects: Projects[] = [
     {
         id: 5,
         title:'Doctor Appointment',
-        description: 'A Web Application to make an appointment with Doctors easily. ',
+        description: 'A Web Application to make an appointment with Doctors easily. ',
         frameworks: [ 'Modular Monolith Architecture','Mern Stack','Tailwind Css', 'Type Script', 'Prisma',],
         deployments: "https://doctor-appointment-5-btf0.onrender.com/home",
         code_source: 'https://github.com/kadik23/doctor-appointment',
@@ -132,7 +132,7 @@ export const projects: Projects[] = [
         id: 7,
         title:'Law Firm',
         description: 'Web application to share files between lawyers and clients and blog and services feature with online payments',
-        frameworks: [ 'MVC Architecture','Next JS','Express Js', 'React-Hook-Form','Tailwind','My Sql',],
+        frameworks: [ 'MVC Architecture','Next JS','Express Js', 'React-Hook-Form','Tailwind','MySql', 'Docker',],
         deployments: 'https://law-site-beryl.vercel.app/',
         code_source: 'https://github.com/kadik23/law-firm-web-app',
         image:'09.png' 
@@ -156,6 +156,32 @@ export const projects: Projects[] = [
         image:'06.png' 
     },
 ]
+
+export const myProjects: Projects[] = projects;
+
+export const contributions: Contribution[] = [
+    {
+        id: 1,
+        name: 'Athar',
+        link: 'https://github.com/athar-hackathon/hackathon-backend',
+        description: 'Tourists are allowed to volunteer in activities within Algeria, such as cleaning campaigns, tree planting, or group travel.',
+        languages: ['Express Js', 'TypeScript', 'PgSql', 'Onion Architecture', 'JWT']
+    },
+    {
+        id: 2,
+        name: 'Nextri Projects',
+        link: 'https://github.com/example/ecommerce-api',
+        description: 'Empowering Developers through Real-World Experience.',
+        languages: ['Hono Js', 'PgSql', 'Drizzle', 'JWT', 'Monorepo', 'Commitlint', 'lint-staged', 'Husky', 'Biome Js']
+    },
+    {
+        id: 3,
+        name: 'FitVibe',
+        link: 'https://github.com/FitVibe/FiteVibe-Backend',
+        description: 'Developed Rich exercise database & instructions: 500+ exercises are categorized by muscle groups, equipment or keywords for you.',
+        languages: ['MongoDb', 'Express Js', 'TypeScript', 'Layered Architecture', 'JWT', 'OOP']
+    },
+];
 
 export const experiecntData = [
     {
@@ -184,7 +210,7 @@ export const educationData = [
     {
         duration: '2022 - 2024',
         title:'University of yahia fares',
-        content: 'Graduated Bachelor’s degree'
+        content: 'Graduated Bachelor\'s degree'
     },
     {
         duration: 'Autumn 2022',

@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
         fs.mkdirSync(tmpDir);
     }
 
-    fs.writeFileSync(credentialsPath, Buffer.from(base64Credentials, 'base64'));
+    fs.writeFileSync(credentialsPath, Buffer.from(base64Credentials, 'base64').toString());
     process.env.GOOGLE_APPLICATION_CREDENTIALS = credentialsPath;
     try {
         // Auth

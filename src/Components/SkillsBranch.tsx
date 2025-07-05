@@ -24,7 +24,7 @@ function getXlMarginTopClass(index: number) {
 function SkillsBranch({ index, skills, field, order }: { index: number, skills: Skill[], field: string, order: number }) {
     const xlMarginTopClass = getXlMarginTopClass(index);
     return (
-        <div className={`flex flex-col gap-8 items-start w-full mr-4 lg:mr-0 mt-16 ${xlMarginTopClass}`}>
+        <div className={`flex flex-col gap-8 ${order === 1 ? 'items-end' : 'items-start'} w-full mr-4 lg:mr-0 mt-16 ${xlMarginTopClass}`}>
             <div className={`flex items-center w-auto`}>
                 <div
                     className={`rounded-full text-center px-5 py-2 border-2 border-green order-2 ${order === 1 ? 'lg:order-1' : 'lg:order-2'}`}
@@ -34,18 +34,20 @@ function SkillsBranch({ index, skills, field, order }: { index: number, skills: 
                 </div>
                 <hr className={`border-2 border-green w-24 lg:w-40 order-1 ${order === 1 ? 'lg:order-2' : 'lg:order-1'}`} />
             </div>
-            <div className={`flex ${order === 2 ? 'flex-row-reverse justify-start' : ' justify-end'} gap-2 px-2 lg:px-4 w-full`}>
-                {skills.map((skill, index) => (
-                    <React.Fragment key={index}>
-                        <Icon
-                            data-tooltip-id={`tooltip-${index}`}
-                            data-tooltip-content={skill.name}
-                            icon={skill.icon}
-                            className='hover:text-green h-8 w-8 text-white cursor-pointer hover:scale-105 transition-all duration-200'
-                        />
-                        <Tooltip id={`tooltip-${index}`} />
-                    </React.Fragment>
-                ))}
+            <div className="w-full min-w-0 overflow-x-auto scrollbar-hide pb-2">
+                <div className={`flex ${order === 2 ? 'flex-row-reverse' : 'flex-row'} gap-2 min-w-max`}>
+                    {skills.map((skill, index) => (
+                        <React.Fragment key={index}>
+                            <Icon
+                                data-tooltip-id={`tooltip-${index}`}
+                                data-tooltip-content={skill.name}
+                                icon={skill.icon}
+                                className='hover:text-green h-8 w-8 text-white cursor-pointer hover:scale-105 transition-all duration-200'
+                            />
+                            <Tooltip id={`tooltip-${index}`} />
+                        </React.Fragment>
+                    ))}
+                </div>
             </div>
         </div>
     );

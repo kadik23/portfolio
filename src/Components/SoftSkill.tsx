@@ -1,30 +1,20 @@
 "use client"
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { motion } from 'framer-motion';
 
-function SoftSkill({
-    name, percentage
-}: {
-    name: string, percentage: number
-}) {
-    const [progress, setProgress] = useState(0);
-
-    useEffect(() => {
-        setProgress(Math.min(100, Math.max(0, percentage)));
-    }, [percentage]);
-
+function SoftSkill({ name }: { name: string }) {
     return (
-        <div className='flex flex-col gap-2 items-center w-44 lg:w-40'>
-            <div className='text-xl inika-bold capitalize lg:text-sm'>{name}</div>
-            <div className='flex flex-col items-center inika-regular text-md w-full'>
-                <div className='text-green inika-bold'>{percentage}%</div>
-                <div className='w-2/3 h-2 lg:h-1.5 bg-light-gray rounded-full overflow-hidden'>
-                    <div
-                        className='h-full bg-green rounded-full transition-width duration-1000'
-                        style={{ width: `${progress}%` }}
-                    ></div>
-                </div>
+        <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            whileHover={{ scale: 1.05, filter: 'brightness(1.15)' }}
+            className='flex items-center justify-center w-44 lg:w-40'
+        >
+            <div className='px-6 py-3 text-nowrap bg-green/20 border border-green rounded-xl shadow-md text-lg inika-bold capitalize text-green text-center transition-all duration-300 hover:bg-green/30'>
+                {name}
             </div>
-        </div>
+        </motion.div>
     );
 }
 
