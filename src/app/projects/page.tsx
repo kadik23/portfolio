@@ -91,7 +91,7 @@ export default function ProjectsPage() {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="mt-16 ml-4 mx-4 flex items-center flex-col md:flex-row"
+                className="mt-8 ml-4 mx-4 flex items-center flex-col md:flex-row"
             >
                 <div className="inika-bold text-lg lg:ml-12 mr-72 xl:text-xl flex gap-2 items-center relative mb-4">
                     My <div className="text-green">Projects</div>
