@@ -115,7 +115,7 @@ export default function ProjectsPage() {
                         </button>
                         <button
                             onClick={() => setActiveTab('contributions')}
-                            className={`px-6 py-2 text-ss rounded-xl font-medium transition-all duration-300 ${
+                            className={`px-6 py-2 text-xs rounded-xl font-medium transition-all duration-300 ${
                                 activeTab === 'contributions'
                                     ? 'bg-green text-white shadow-lg'
                                     : 'text-gray-300 hover:text-white hover:bg-white/10'
