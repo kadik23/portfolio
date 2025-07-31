@@ -123,8 +123,8 @@ export const projects: Projects[] = [
         id: 6,
         title:'Cs Department Management',
         description: 'Web application to manage the computer science department like Adminstraters, Teachers and Students',
-        frameworks: [ 'MVC','Laravel','React Js','Inertia','My Sql', 'Redux', 'TailwindCss'],
-        deployments: null,
+        frameworks: [ 'MVC','Laravel','React Js','Inertia','My Sql', 'Pg Sql', 'Redux', 'TailwindCss'],
+        deployments: 'https://cs-department-management.onrender.com/',
         code_source: 'https://github.com/kadik23/cs-department-management',
         image:'07.png' 
     },
