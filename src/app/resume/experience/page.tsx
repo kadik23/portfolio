@@ -14,7 +14,7 @@ export default function experiencepage(){
             <div className="inika-bold text-2xl text-center">My experience</div>
             <div className="text-center xl:text-start">I have experience in web and mobile development, as well as project management, specializing <br />in modern frameworks, scalable solutions, and efficient team coordination.</div>
         </div>
-        <div className="flex flex-wrap justify-center xl:justify-start gap-4 w-full">
+        <div className="flex flex-wrap justify-center xl:justify-start gap-4 w-full overflow-y-auto h-full max-h-[60vh]">
             {experiecntData.map((experience, index) =>{
                 return (<InformationsCard key={index}  duration = {experience.duration} title={experience.title} content={experience.content}/>)
             })}

@@ -12,6 +12,7 @@ export const hardSkills: HardSkills = {
         { name: 'Apolo GraphQl', icon: 'grommet-icons:graph-ql' },
         { name: 'Redux', icon: 'simple-icons:redux' },
         { name: 'Ant Design', icon: 'simple-icons:antdesign' },
+        { name: 'Styled Components', icon: 'simple-icons:styledcomponents' },
     ],
     'Back End': [
         { name: 'Php', icon: 'simple-icons:php' },
@@ -23,6 +24,7 @@ export const hardSkills: HardSkills = {
         { name: 'Next Js', icon: 'file-icons:nextjs' },
         { name: 'Web Socket', icon: 'simple-icons:socketdotio' },
         { name: 'Hono Js', icon: 'simple-icons:hono' },  
+        { name: 'Firebase', icon: 'mdi:firebase' },  
     ],
     'Database System': [
         { name: 'MySql', icon: 'simple-icons:mysql' },
@@ -42,6 +44,7 @@ export const hardSkills: HardSkills = {
     'Devops': [
         { name: 'Git', icon: 'teenyicons:git-solid' },
         { name: 'Github', icon: 'mdi:github' },
+        { name: 'Gitlab', icon: 'mdi:gitlab' },
         { name: 'Docker', icon: 'mdi:docker' },
         { name: 'Turborepo', icon: 'simple-icons:turborepo' },
     ],
@@ -185,24 +188,29 @@ export const contributions: Contribution[] = [
 
 export const experiecntData = [
     {
-        duration: '2024 - 2025',
+        duration: 'December 2024 - Janvier 2025',
         title:'TechVerse Club',
         content: 'IT Team Leader, Mentoring & Developing and Designing web apps'
     },
     {
-        duration: '2024 - Present',
+        duration: 'June 2024 - Present',
         title:'Freelance · Software Developer',
         content: 'Implementing projects with medium complexity.'
     },
     {
-        duration: '2024 - 2025',
+        duration: 'August 2024 - May 2025',
         title:'Thynk Tech Dz · Internship',
         content: 'IT Project Manager, Developing front end of web apps'
     },
     {
-        duration: '2025 - Present',
+        duration: 'April 2025 - Present',
         title:'Mustaeidun · Contract',
         content: 'Implementing ui ux for mobile app + web app and design social media posts.'
+    },
+        {
+        duration: 'August 2025 - Present',
+        title:'Developatic · Contract',
+        content: 'Implementing web applications and Apis for mobile apps using Laravel and React Js.'
     },
 ]
 
